@@ -117,7 +117,7 @@ export void renderNewtonFractal(uniform int width,
             // Hue per root
             float hue = 360.0f * rootIndex / (float)n;
 
-            // Brightness scaled so even fast-converging pixels are visible
+            // Brightness
             float brightness = 0.5f + 0.5f * (1.0f - (float)iter / (float)maxIterations);
             float sat = 1.0f;
 
@@ -139,7 +139,7 @@ export void renderNewtonFractal(uniform int width,
             b = (unsigned int8)clamp((bf + m) * 255.0f, 0.0f, 255.0f);
         }
 
-        // Store the pixel (interleaved RGB)
+        // Store the pixel
         image[idx] = r;
         image[idx + 1] = g;
         image[idx + 2] = b;

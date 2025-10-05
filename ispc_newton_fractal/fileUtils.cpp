@@ -1,6 +1,6 @@
-#include "fileUtils.h"
-
 #define STB_IMAGE_WRITE_IMPLEMENTATION
+
+#include "fileUtils.h"
 
 void FileHandler::writePNG(uint8_t* buf, int width, int height, const char* fn)
 {

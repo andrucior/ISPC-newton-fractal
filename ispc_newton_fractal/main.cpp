@@ -57,7 +57,6 @@ int main() {
 
             // Save as PNG 
             FileHandler::writePNG(image.data(), width, height, "newton.png");
-            std::cout << "Wrote newton.png\n";
 
             return 0;
         }
